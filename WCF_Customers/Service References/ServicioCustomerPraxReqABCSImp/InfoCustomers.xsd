@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.praxair.com.co/customer" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.praxair.com.co/customer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CUSTOMERS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ADDRESSBOOK">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AN8" type="xs:string" />
+              <xs:element name="CO" type="xs:string" />
+              <xs:element name="EXR1" type="xs:string" />
+              <xs:element name="MCU" type="xs:string" />
+              <xs:element name="TAX" type="xs:string" />
+              <xs:element name="ALPH" type="xs:string" />
+              <xs:element name="AT1" type="xs:string" />
+              <xs:element name="ALKY" type="xs:string" />
+              <xs:element name="SIC" type="xs:string" />
+              <xs:element name="LNGP" type="xs:string" />
+              <xs:element name="TAXC" type="xs:string" />
+              <xs:element name="AC01" type="xs:string" />
+              <xs:element name="AC04" type="xs:string" />
+              <xs:element name="AC16" type="xs:string" />
+              <xs:element name="AC11" type="xs:string" />
+              <xs:element name="AC12" type="xs:string" />
+              <xs:element name="AC13" type="xs:string" />
+              <xs:element name="MLNM" type="xs:string" />
+              <xs:element name="ADD1" type="xs:string" />
+              <xs:element name="ADD2" type="xs:string" />
+              <xs:element name="CTY1" type="xs:string" />
+              <xs:element name="CTR" type="xs:string" />
+              <xs:element name="ADDS" type="xs:string" />
+              <xs:element name="COUN" type="xs:string" />
+              <xs:element name="PH1" type="xs:string" />
+              <xs:element name="PA8" type="xs:string" />
+              <xs:element name="AC18" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="COLOMBIA_ADICIONAL_INFORMACION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="V076CTPT" type="xs:string" />
+              <xs:element name="V0EFDJ" type="xs:dateTime" />
+              <xs:element name="V076CCIIU" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CUSTOMERMASTER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TXA1" type="xs:string" />
+              <xs:element name="CRCA" type="xs:string" />
+              <xs:element name="ACL" type="xs:int" />
+              <xs:element name="RYIN" type="xs:string" />
+              <xs:element name="CRCD" type="xs:string" />
+              <xs:element name="TRAR" type="xs:string" />
+              <xs:element name="CLMG" type="xs:string" />
+              <xs:element name="DAOJ" type="xs:dateTime" />
+              <xs:element name="AC30" type="xs:string" />
+              <xs:element name="ABC1" type="xs:string" />
+              <xs:element name="BADT" type="xs:string" />
+              <xs:element name="ACTN" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

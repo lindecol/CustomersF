@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fe60e7d4-9b8d-4acd-8393-46f9def0c72b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/SyncCustomerPraxReqABCSImpl?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RuntimeFault.wsdl" MetadataType="Wsdl" ID="87792099-ec94-41e7-951a-e85a8e5dad9b" SourceId="1" SourceUrl="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/apps/AIAMetaData/AIAComponents/UtilityArtifacts/RuntimeFault.wsdl" />
+    <MetadataFile FileName="PraxairBusinessFault.wsdl" MetadataType="Wsdl" ID="c7e98e20-0b67-4f9f-ba3e-847533d57fbd" SourceId="1" SourceUrl="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/SyncCustomerPraxReqABCSImpl?WSDL=wsdl/PraxairBusinessFault.wsdl" />
+    <MetadataFile FileName="SyncCustomerPraxReqABCSImpl.wsdl" MetadataType="Wsdl" ID="e7fad482-3fd8-4200-abff-b2786be6a284" SourceId="1" SourceUrl="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/SyncCustomerPraxReqABCSImpl?wsdl" />
+    <MetadataFile FileName="InfoCustomers.xsd" MetadataType="Schema" ID="205d7a96-f6e4-410f-ad2d-fbfb148f814a" SourceId="1" SourceUrl="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/SyncCustomerPraxReqABCSImpl?XSD=xsd/InfoCustomers.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

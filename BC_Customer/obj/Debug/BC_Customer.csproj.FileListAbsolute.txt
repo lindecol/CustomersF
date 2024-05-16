@@ -1,0 +1,2 @@
+C:\Users\e0zo10\Documents\Nestor Rodriguez\Documentos\BACKUP TFS\Interface JDE - Prax2000\Clientes\Customers\BC_Customer\obj\Debug\BC_Customer.csproj.AssemblyReference.cache
+C:\Users\e0zo10\Documents\Nestor Rodriguez\Documentos\BACKUP TFS\Interface JDE - Prax2000\Clientes\Customers\BC_Customer\obj\Debug\BC_Customer.csproj.CoreCompileInputs.cache

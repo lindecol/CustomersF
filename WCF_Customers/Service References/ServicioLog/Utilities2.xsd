@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WSCommonOperations.ErrorHandler" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WSCommonOperations.ErrorHandler" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="ProcessId">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ninguno" />
+      <xs:enumeration value="ItemMaster">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Inventory" />
+      <xs:enumeration value="InventoryCost">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Customers" />
+      <xs:enumeration value="SalesOrder" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProcessId" nillable="true" type="tns:ProcessId" />
+</xs:schema>

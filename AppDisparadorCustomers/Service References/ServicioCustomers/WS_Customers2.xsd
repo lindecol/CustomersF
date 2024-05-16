@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.praxair.com.co/customer" elementFormDefault="qualified" targetNamespace="http://www.praxair.com.co/customer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56001/WS_Customers.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="Confirmation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyID" type="xs:int" />
+        <xs:element minOccurs="0" name="customerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="interfaceStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="an8" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ConfirmationResult" nillable="true" type="q1:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Customers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="interfaceStatus" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_CustomersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Get_CustomersResult" nillable="true" type="q2:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

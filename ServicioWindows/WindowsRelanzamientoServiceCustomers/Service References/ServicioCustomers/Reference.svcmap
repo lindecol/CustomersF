@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="390ef36a-ce59-4cc1-8520-be0fbbe1a5c4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.104.0.31/Servicios/WS_Customers/WS_Customers.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WS_Customers31.xsd" MetadataType="Schema" ID="344be3e4-ee0d-415e-8e94-87b8177bd72a" SourceId="1" SourceUrl="http://colbogas3.sa.praxair.com/Servicios/WS_Customers/WS_Customers.svc?xsd=xsd2" />
+    <MetadataFile FileName="WS_Customers1.disco" MetadataType="Disco" ID="03fc4d7e-b79e-4956-87a8-fee15fa25e49" SourceId="1" SourceUrl="http://colbogas3.sa.praxair.com/Servicios/WS_Customers/WS_Customers.svc?disco" />
+    <MetadataFile FileName="WS_Customers2.wsdl" MetadataType="Wsdl" ID="0a8a6ada-0c69-4ed4-bb36-27003941c013" SourceId="1" SourceUrl="http://colbogas3.sa.praxair.com/Servicios/WS_Customers/WS_Customers.svc?wsdl" />
+    <MetadataFile FileName="WS_Customers3.xsd" MetadataType="Schema" ID="45a173f5-ad38-4450-9a9f-970b3af29288" SourceId="1" SourceUrl="http://colbogas3.sa.praxair.com/Servicios/WS_Customers/WS_Customers.svc?xsd=xsd0" />
+    <MetadataFile FileName="WS_Customers32.xsd" MetadataType="Schema" ID="74007b7f-bfde-4676-8c8a-1382232640d9" SourceId="1" SourceUrl="http://colbogas3.sa.praxair.com/Servicios/WS_Customers/WS_Customers.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

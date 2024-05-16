@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7bfd80f6-8296-44dd-afce-f9e59b2450cf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Utilities.xsd" MetadataType="Schema" ID="b1cdf07e-66df-42ba-a1c8-1509e55df3c0" SourceId="1" SourceUrl="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc?xsd=xsd0" />
+    <MetadataFile FileName="Utilities1.xsd" MetadataType="Schema" ID="89cdd3ca-de5e-42fc-83f9-94d8d7ca3ad9" SourceId="1" SourceUrl="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc?xsd=xsd1" />
+    <MetadataFile FileName="Utilities.wsdl" MetadataType="Wsdl" ID="c9841991-6ed9-4592-8c05-e45ca16176be" SourceId="1" SourceUrl="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Utilities2.xsd" MetadataType="Schema" ID="6ad3a728-c200-4f37-8276-a952402e91b7" SourceId="1" SourceUrl="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc?xsd=xsd2" />
+    <MetadataFile FileName="Utilities1.wsdl" MetadataType="Wsdl" ID="14378020-390f-4440-ae30-519d3bf640a7" SourceId="1" SourceUrl="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc?wsdl" />
+    <MetadataFile FileName="Utilities.disco" MetadataType="Disco" ID="12d0cb52-e2aa-4d04-b3b9-1f14c3a74d72" SourceId="1" SourceUrl="http://10.104.0.31/Servicios/WS_CommonOperations/Utilities.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

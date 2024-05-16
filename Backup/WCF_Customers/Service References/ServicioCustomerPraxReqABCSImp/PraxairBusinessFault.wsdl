@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:svcdoc="http://xmlns.oracle.com/Services/Documentation/V1" xmlns:local="http://praxair.com/PraxairBusinessFault" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PraxairBusinessFault" targetNamespace="http://praxair.com/PraxairBusinessFault" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://praxair.com/PraxairBusinessFault">
+      <xsd:element name="PraxairBusinessFault">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="code" type="xsd:string" />
+            <xsd:element name="detail" type="xsd:string" />
+            <xsd:element name="summary" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PraxairBusinessFaultMsg">
+    <wsdl:part name="PraxairBusinessFault" element="local:PraxairBusinessFault" />
+  </wsdl:message>
+  <wsdl:portType name="PraxairBusinessFaultPortType">
+    <wsdl:operation name="process">
+      <wsdl:input message="local:PraxairBusinessFaultMsg" />
+      <wsdl:output message="local:PraxairBusinessFaultMsg" />
+      <wsdl:fault name="PraxairBusinessFaultMsg" message="local:PraxairBusinessFaultMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PraxairBusinessFaultBinding" type="local:PraxairBusinessFaultPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="process">
+      <soap:operation soapAction="process" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://praxair.com/PraxairBusinessFault" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://praxair.com/PraxairBusinessFault" />
+      </wsdl:output>
+      <wsdl:fault name="PraxairBusinessFaultMsg">
+        <soap:fault use="literal" name="PraxairBusinessFaultMsg" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PraxairBusinessFault">
+    <wsdl:port name="PraxairBusinessFaultPort" binding="local:PraxairBusinessFaultBinding">
+      <soap:address location="http://dummyendpoint" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

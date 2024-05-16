@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:praxabo="http://www.praxair.com.co/customer" xmlns:ns2="http://praxair.com/PraxairBusinessFault" xmlns:svcdoc="http://xmlns.oracle.com/Services/Documentation/V1" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:praxabcs="http://xmlns.oracle.com/ABCSImpl/Prax/Core/SyncCustomerPraxReqABCSImpl/V1" xmlns:ns1="http://xmlns.oracle.com/Utilities/XREF" xmlns="http://schemas.xmlsoap.org/wsdl/" name="SyncCustomerPraxReqABCSImpl" targetNamespace="http://xmlns.oracle.com/ABCSImpl/Prax/Core/SyncCustomerPraxReqABCSImpl/V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <documentation>
+    <svcdoc:Service>
+      <svcdoc:Description />
+      <svcdoc:ServiceType>RequesterABCSImpl</svcdoc:ServiceType>
+      <svcdoc:Version>1</svcdoc:Version>
+      <svcdoc:ProductCode>Prax</svcdoc:ProductCode>
+    </svcdoc:Service>
+    <abstractWSDL>http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl!1.0/SyncCustomerPraxReqABCSImpl.wsdl</abstractWSDL>
+  </documentation>
+  <plnk:partnerLinkType name="SyncCustomerPraxReqABCSImpl">
+    <plnk:role name="SyncCustomerPraxReqABCSImplProvider">
+      <plnk:portType name="praxabcs:SyncCustomerPraxReqABCSImpl" />
+    </plnk:role>
+  </plnk:partnerLinkType>
+  <wsdl:import namespace="http://praxair.com/PraxairBusinessFault" location="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/SyncCustomerPraxReqABCSImpl?WSDL=wsdl/PraxairBusinessFault.wsdl" />
+  <wsdl:import namespace="http://schemas.oracle.com/bpel/extension" location="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/apps/AIAMetaData/AIAComponents/UtilityArtifacts/RuntimeFault.wsdl" />
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/SyncCustomerPraxReqABCSImpl?XSD=xsd/InfoCustomers.xsd" namespace="http://www.praxair.com.co/customer" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SyncCustomerReqMsg">
+    <wsdl:part name="SyncCustomer" element="praxabo:CUSTOMERS" />
+  </wsdl:message>
+  <wsdl:portType name="SyncCustomerPraxReqABCSImpl">
+    <wsdl:operation name="SyncCustomer">
+      <documentation>
+        <svcdoc:Operation>
+          <svcdoc:Description>This operation is used to Sync an Customer
+                              object</svcdoc:Description>
+          <svcdoc:MEP>FireAndForget</svcdoc:MEP>
+        </svcdoc:Operation>
+      </documentation>
+      <wsdl:input message="praxabcs:SyncCustomerReqMsg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SyncCustomerPraxReqABCSImplBinding" type="praxabcs:SyncCustomerPraxReqABCSImpl">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SyncCustomer">
+      <soap:operation soapAction="SyncCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://xmlns.oracle.com/ABCSImpl/Prax/Core/SyncCustomerPraxReqABCSImpl/V1" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SyncCustomerPraxReqABCSImpl">
+    <wsdl:port name="SyncCustomerPraxReqABCSImpl_pt" binding="praxabcs:SyncCustomerPraxReqABCSImplBinding">
+      <soap:address location="http://usadanassoat1.na.praxair.com:8001/soa-infra/services/COLOMBIA/SyncCustomerPraxReqABCSImpl/SyncCustomerPraxReqABCSImpl" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

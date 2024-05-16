@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsRelanzamientoServiceCustomers.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Usuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SISFACT</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SISFACT</Value>
+    </Setting>
+    <Setting Name="Servidor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COOXDES</Value>
+    </Setting>
+    <Setting Name="Intervalo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
